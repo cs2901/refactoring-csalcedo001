@@ -1,9 +1,8 @@
 class PizzaDelivery {
   // ...
-  boolean moreThanFiveLateDeliveries() {
-    return numberOfLateDeliveries > 5;
-  }
   int getRating() {
-    return moreThanFiveLateDeliveries() ? 2 : 1;
+  	boolean moreThanFiveLateDeliveries = numberOfLateDeliveries > 5;
+
+    return moreThanFiveLateDeliveries ? 2 : 1;
   }
 }
